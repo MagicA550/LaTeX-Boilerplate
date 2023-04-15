@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{indentfirst}
+\usepackage{lipsum}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{longtable}
+\usepackage{subfig}
+\usepackage[tmargin=1in,bmargin=1in,lmargin=1.25in,rmargin=1.25in]{geometry}
+\usepackage{import}
+\usepackage{tabularx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[backend=biber, style=bath]{biblatex} % todo - update referencing style if needed
+\usepackage{multirow}
+\usepackage[shortlabels]{enumitem}
+\usepackage{pdflscape}
+
+\addbibresource{./references.bib}
+
+\lstset{language=Python,keywordstyle={\bfseries \color{black}}} % todo - update to necessary language if needed.
+
+\renewcommand{\thesection}{\MakeUppercase{\alph{section}}} % todo - remove if you don't want sections to be alphabetical.
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue
+} % todo - customise colours if you want.
+
+\graphicspath{ {./images/} }
+
+\title{Hello, World!}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+    Hello, World!
+\end{abstract}
+
+\tableofcontents
+
+% todo - import sections here using \import{sections/}{<file name>.tex}.
+
+\printbibliography[heading=bibnumbered] % remove argument if you don't want references to show up as a section.
+
+\end{document}
